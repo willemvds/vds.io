@@ -27,7 +27,6 @@ export function handleCommand(cmd, blockTerm) {
 
     if (cmd.startsWith("telnet")) {
         cmd = cmd.replace("telnet", "").trim();
-        console.log("HELLO CMD", cmd, cmd.length);
         if (cmd.length == 0) {
             term.addBlocks([
                 "Usage: telnet <host>:<port>",
