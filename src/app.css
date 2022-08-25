@@ -1,0 +1,74 @@
+:root {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  background-color: #242424;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+}
+
+div#term {
+  /* width: 95%; */
+  min-width: 1400px;
+}
+
+.testing {
+  font-size: 200%;
+}
+
+.c30 {
+  color: black;
+}
+.c31 {
+  color: red;
+}
+.c32 {
+  color: green;
+}
+.c33 {
+  color: yellow;
+}
+.c34 {
+  color: blue;
+}
+.c35 {
+  color: magenta;
+}
+.c36 {
+  color: cyan;
+}
+.c37 {
+  color: white;
+}
+.c39 {
+  color: white;
+}
