@@ -27,9 +27,10 @@
     const dispatch = createEventDispatcher();
 
     function dispatchCommand(cmd) {
-
-        cmdHistory.pushBack(cmd);
-        cmdHistoryItems = cmdHistory.items().reverse();
+        if (cmd.trim() !== "") {
+            cmdHistory.pushBack(cmd);
+            cmdHistoryItems = cmdHistory.items().reverse();
+        }
         cmdHistoryIndex = -1;
 
         if (partial) {
