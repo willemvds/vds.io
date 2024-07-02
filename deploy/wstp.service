@@ -1,0 +1,12 @@
+[Unit]
+Description=Websocket TCP/Telnet Proxy
+
+[Service]
+Type=simple
+WorkingDirectory=/root
+ExecStart=deno run --allow-read --allow-net wstp.ts -p 13000 --cert=/etc/letsencrypt/live/vds.io/fullchain.pem --key=/etc/letsencrypt/live/vds.io/privkey.pem
+Restart=on-failure
+
+[Install]
+WantedBy=mult-user.target
+
