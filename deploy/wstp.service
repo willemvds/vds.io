@@ -8,5 +8,5 @@ ExecStart=deno run --allow-read --allow-net wstp.ts -p 13000 --cert=/etc/letsenc
 Restart=on-failure
 
 [Install]
-WantedBy=mult-user.target
+WantedBy=multi-user.target
 
